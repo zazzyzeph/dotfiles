@@ -1,2 +1,0 @@
-# dotfiles
-zsh/zim/neovim
