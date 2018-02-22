@@ -33,3 +33,6 @@ export PATH=$PATH:/home/deploy/scrubtastic/local
 
 alias vimrc="nvim ~/.config/nvim/init.vim"
 alias config='/usr/bin/git --git-dir=/home/deploy/.cfg/ --work-tree=/home/deploy'
+
+
+export PATH=$PATH:$HOME/.composer/vendor/bin

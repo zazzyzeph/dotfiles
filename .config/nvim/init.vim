@@ -1,7 +1,5 @@
 call plug#begin('~/.config/nvim/bundle')
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'zchee/deoplete-jedi'
 Plug 'trevordmiller/nova-vim'
@@ -13,8 +11,9 @@ Plug 'tpope/vim-vinegar'
 Plug 'jiangmiao/auto-pairs'
 Plug 'joonty/vdebug'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'airblade/vim-gitgutter'
 Plug 'padawan-php/deoplete-padawan', { 'do': 'composer install' }
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 " call PlugInstall to install new plugins
 call plug#end()
 
@@ -71,7 +70,8 @@ syntax enable
 "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 colorscheme seoul256
-
+let g:indentLine_setColors = 0
+let g:airline_theme='zenburn'
 set number relativenumber
 
 :augroup numbertoggle
@@ -80,6 +80,6 @@ set number relativenumber
 :  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 :augroup END
 
-set breakindentopt=shift:4
+set breakindentopt=shift:2
 set breakindent
 
