@@ -4,6 +4,8 @@ before importing - installs
 
 sudo apt install neovim python3 python3-pip php-igbinary padawan
 
+pip3 install neovim
+
 
 before running:
 
